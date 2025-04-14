@@ -1,13 +1,15 @@
 /* tslint:disable */
 /* eslint-disable */
 export const memory: WebAssembly.Memory;
-export function to_bin(a: number, b: number, c: number): void;
-export function slice_to_bin(a: number, b: number, c: number): void;
-export function to_bin_with_options(a: number, b: number, c: number, d: number): void;
-export function slice_to_bin_with_options(a: number, b: number, c: number, d: number): void;
-export function to_xml(a: number, b: number, c: number, d: number): void;
-export function debug_mode(): void;
-export function __wbindgen_malloc(a: number): number;
-export function __wbindgen_realloc(a: number, b: number, c: number): number;
-export function __wbindgen_add_to_stack_pointer(a: number): number;
-export function __wbindgen_free(a: number, b: number): void;
+export const to_bin: (a: number, b: number) => [number, number, number];
+export const slice_to_bin: (a: number, b: number) => [number, number, number];
+export const to_bin_with_options: (a: number, b: number, c: any) => [number, number, number];
+export const slice_to_bin_with_options: (a: number, b: number, c: any) => [number, number, number];
+export const to_xml: (a: number, b: number, c: number) => [number, number, number];
+export const debug_mode: () => void;
+export const __wbindgen_malloc: (a: number, b: number) => number;
+export const __wbindgen_realloc: (a: number, b: number, c: number, d: number) => number;
+export const __wbindgen_free: (a: number, b: number, c: number) => void;
+export const __wbindgen_export_3: WebAssembly.Table;
+export const __externref_table_dealloc: (a: number) => void;
+export const __wbindgen_start: () => void;
